@@ -5,7 +5,8 @@ function Senator(svg,width,height,x,y) {
         .attr("y", y)
         .attr("height", height)
         .attr("width", width)
-        .attr("fill", "#dee1dd");
+        .attr("fill", "#dee1dd")
+        .attr("opacity",0.1);
 
     var ratio = 0.9;
 
@@ -23,7 +24,8 @@ function Senator(svg,width,height,x,y) {
         .attr("y", y + + height * ratio)
         .attr("height", height * (1-ratio))
         .attr("width", width)
-        .attr("fill", "#dee1dd");
+        .attr("fill", "#dee1dd")
+        .attr("opacity",0.1);
 
     this.text = svg
         .append("text")

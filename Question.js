@@ -79,13 +79,13 @@ function Button(svg, width, height, x, y, isYes, question,number) {
     this.svg = svg;
 
     if(isYes){
-        this.normal_color= "#7cff63";
+        this.normal_color= "#bdc0bc";
         this.toggle_color="#36ff00";
         this.mouse_over_color="#009d02";
         text = "YES";
         this.id = number+"0";
     } else {
-        this.normal_color= "#ff6d3f";
+        this.normal_color= "#bdc0bc";
         this.toggle_color="#ff241d";
         this.mouse_over_color="#9d0100";
         text = "NO";

@@ -241,14 +241,14 @@ function add_new_node(){
 
     restart();
 
-    var node = {"party":"You"};
+    var node = {"party":"You","name":"You"};
     nodes.push(node);
 
     d3.csv(file_name_embedding, function (data) {
         nodes.forEach(function (target) {
             for(var i =0;i<data.length;i++) {
                 if(data[i][0]>0 && i  === target["index"]) {
-                    links.push({source: target, target: node,"weight":data[i][0]});
+                    links.push({source: node, target: target,"weight":data[i][0]});
                 }
             }
         });
@@ -304,9 +304,21 @@ function restart() {
         .style("opacity", function (d) {
         return 0.2;
     }).style("stroke-width", function (d) {
+        if (d.source.party === "You"){
+            return 0.2+2*(d.weight)
+        }
         return 0.2+1*(d.weight);
+    }).style("stroke", function(d) {
+        if (d.source.party === "You" && d.target.party === "D") {
+            return dem_color
+        }
+        if (d.source.party === "You" && d.target.party === "R") {
+            return rep_color
+        }
+        if (d.source.party === "You" && d.target.party === "I") {
+            return indp_color
+        }
     });
-
     link.exit()
         .remove();
 
@@ -314,15 +326,14 @@ function restart() {
 }
 
 function handleMouseOver(d) {  // Add interactivity
-    console.log("pepe")
     if (d3.selectAll("#id" + d['id'])[0].length === 0) {
         // Specify where to put label of text
        svg
             .append("text")
-           .attr("y",10)
+           .attr("y",30)
            .attr("x",width/4)
            .attr("id", "id" + d['id'])
-            .attr("font-size",height/75)
+            .attr("font-size",height/30)
             .attr("class","noselect")
             .text(function () {
                 return d.name;  // Value of the text
