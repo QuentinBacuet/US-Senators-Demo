@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Data visualization</title>
+    <script src="http://d3js.org/d3.v2.min.js?2.9.3"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--<link rel="icon" type="image/png" href="imgs/logo_refugee.png" />-->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/skeleton.css">
+    <style>
+        h1 {
+            font-weight: bold;
+        }
+        h1, h2, h3, h4 {
+            margin-top: 1em;
+        }
+        p, ul {
+            text-align: justify;
+            font-size: 2rem;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        svg{
+            display: block;
+            margin: auto;
+        }
+        .main_button:hover {
+            background: #d9d9d9;
+            text-decoration: none;
+        }
+        .centered {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px
+        }
+        .headerimg {
+            position: fixed;
+            z-index: 0;
+            height: 30%;
+            width: 100%;
+            margin: 0;
+        }
+        .banner {
+            display: block;
+            position: absolute;
+            min-width: 100%;
+        }
+        .contentwrapper {
+            position: relative;
+            z-index: 1000;
+            margin-top: 180px;
+            /*height: 1000px;*/
+            background-color: white;
+            width: 100%;
+        }
+        .pagecontent {
+            z-index: 1000;
+        }
+        .main_graph {
+            height: 1000px;
+            width: 100%;
+            background-color: powderblue;
+        }
+        div {
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+        }
+        .link {
+            stroke: #aaa;
+        }
+
+        .node text {
+            stroke:#333;
+            cursos:pointer;
+        }
+
+        .node circle{
+            stroke:#fff;
+            stroke-width:3px;
+            fill:#555;
+        }
+
+        .svg-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            vertical-align: top;
+            overflow: hidden;
+        }
+        .svg-content {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .noselect {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="headerimg">
+    <img src="imgs/Network-diagram.png" class="banner"/>
+</div>
+<div class="pagecontent">
+    <script type="text/javascript" src="SmoothScroll.js"></script>
+    <script type="text/javascript" src="Question.js"></script>
+    <script type="text/javascript" src="GoButton.js"></script>
+    <script type="text/javascript" src="Senator.js"></script>
+
+    <div class="contentwrapper">
+        <div class="centered">
+            <h1>Political affiliation identification</h1>
+            <h2>Finding senators that match your ideology</h2>
+            <p>Predicting how Congressional legislators vote is important for understanding their past and future behavior. In this project, we explore U.S. senators voting patterns using a network-based approach. Our main goal is to use congress roll call votes results on bills, motions and resolutions to predict political stances of individuals and vote outcomes based on a restricted set of features. The latter will consist of carefully chosen votes which are designed to convey the highest information on senators voting behaviour. We will also explore whether we can accurately predict the outcome of a vote only by looking at a small, well-chosen subset of senators. We will start our study by presenting the dataset that we used throughout the project. Then, we will move to present the results of our graph-based data exploration. Finally, we will explain the methods used to achieve the goals stated above.</p>
+        </div>
+        <div class="centered" id="Button">
+            <a href="#container" style="font-size: 30px; text-decoration: none">Go to Viz</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="container" class="svg-container">
+            <script type="text/javascript" src="Demo.js"></script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

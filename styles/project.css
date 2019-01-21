@@ -1,0 +1,194 @@
+body{
+    background-color: #f2f2f2;
+}
+
+.unfocusable{
+    /* makes item unselectable (typically for text) */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.no_pointer_event{
+    pointer-events: none;
+}
+
+.year_label{
+    color: #595959;
+    font-family: 'Merriweather', serif;
+    font-size: 5em;
+    font-weight: 300;
+}
+
+#graph_entry{
+    fill: #b2d2f4
+}
+
+#graph_entry_focused {
+    fill: #2166ac
+}
+
+#graph_entry:hover {
+    fill: #2166ac;
+}
+
+#graph_exit{
+    fill: #f4b2b7
+}
+
+#graph_exit_focused {
+    fill: #b2182b
+}
+
+#graph_exit:hover {
+    fill: #b2182b;
+}
+
+.axis line{
+    stroke: #595959;
+}
+
+.axis path{
+    stroke: #595959;
+}
+
+.axis text{
+    fill: #595959;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: #f8f8f8;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h3 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+    z-index : 1800;
+}
+
+.leaflet-left .leaflet-control {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.leaflet-bottom.leaflet-left{
+    z-index:800;
+}
+
+.legend i {
+    width: 12pt;
+    height: 12pt;
+    float: left;
+    margin-right: 4pt;
+    opacity: 0.4;
+}
+
+div.info_graph {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 1px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+div.info_legend {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 1px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#line{
+    stroke: #7f7f7f;
+    stroke-width: 1;
+    fill: none;
+}
+
+#graph_dot{
+    fill: #7f7f7f
+}
+
+#mapid {
+    height: 500px;
+    border: 1px solid #cccccc;
+    z-index: 2000;
+}
+
+.node {
+    position: absolute;
+    background-size: cover;
+}
+
+.button_history_event_dark {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #595959;
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: 600;
+    padding: 8pt;
+    width: 100%;
+    background-color: #cccccc;
+    border: solid #337FED 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button_history_event_dark:hover {
+    background: #d9d9d9;
+    text-decoration: none;
+}
+
+.button_history_event_light {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #595959;
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: 600;
+    padding: 8pt;
+    width: 100%;
+    background-color: #e6e6e6;
+    border: solid #337FED 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button_history_event_light:hover {
+    background: #f2f2f2;
+    text-decoration: none;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
