@@ -1,3 +1,3 @@
-,member_id,name,party
-0,S001194,Brian Schatz,D
-1,H001042,Mazie Hirono,D
+member_id,party,first_name,last_name,votes_with_party_pct,name
+H001042,D,Mazie,Hirono,88.35,Mazie Hirono
+G000555,D,Kirsten,Gillibrand,78.78,Kirsten Gillibrand

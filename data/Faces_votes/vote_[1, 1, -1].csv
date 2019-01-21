@@ -1,3 +1,3 @@
-,member_id,name,party
-0,G000555,Kirsten Gillibrand,D
-1,C000141,Benjamin Cardin,D
+member_id,party,first_name,last_name,votes_with_party_pct,name
+D000622,D,Tammy,Duckworth,92.08,Tammy Duckworth
+T000464,D,Jon,Tester,87.17,Jon Tester

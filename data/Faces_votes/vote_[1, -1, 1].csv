@@ -1,3 +1,3 @@
-,member_id,name,party
-0,T000461,Patrick Toomey,R
-1,L000577,Mike Lee,R
+member_id,party,first_name,last_name,votes_with_party_pct,name
+C000880,R,Michael,Crapo,95.75,Michael Crapo
+L000577,R,Mike,Lee,84.64,Mike Lee

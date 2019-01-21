@@ -1,3 +1,3 @@
-,member_id,name,party
-0,Y000064,Todd Young,R
-1,G000562,Cory Gardner,R
+member_id,party,first_name,last_name,votes_with_party_pct,name
+J000293,R,Ron,Johnson,95.93,Ron Johnson
+C001047,R,Shelley,Capito,96.84,Shelley Capito

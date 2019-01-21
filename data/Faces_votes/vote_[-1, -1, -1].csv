@@ -1,3 +1,3 @@
-,member_id,name,party
-0,S000033,Bernard Sanders,I
-1,P000603,Rand Paul,R
+member_id,party,first_name,last_name,votes_with_party_pct,name
+S000033,I,Bernard,Sanders,78.49,Bernard Sanders
+P000603,R,Rand,Paul,80.53,Rand Paul

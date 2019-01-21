@@ -1,3 +1,3 @@
-,member_id,name,party
-0,N000032,Bill Nelson,D
-1,D000563,Richard Durbin,D
+member_id,party,first_name,last_name,votes_with_party_pct,name
+G000555,D,Kirsten,Gillibrand,78.78,Kirsten Gillibrand
+C001035,R,Susan,Collins,90.07,Susan Collins

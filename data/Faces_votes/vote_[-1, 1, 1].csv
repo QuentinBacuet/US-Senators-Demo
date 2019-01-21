@@ -1,3 +1,3 @@
-,member_id,name,party
-0,Y000064,Todd Young,R
-1,G000562,Cory Gardner,R
+member_id,party,first_name,last_name,votes_with_party_pct,name
+I000055,R,Johnny,Isakson,97.51,Johnny Isakson
+P000449,R,Rob,Portman,97.41,Rob Portman
