@@ -92,8 +92,8 @@ function init() {
         .attr("fill", "#d3d6d2")
         .style("opacity", 0.5);
 
-    question_1 = new Question(svg, question_width, question_height, question_x, question_y / 2, "0", "Impose sanctions against any", "personhelp Iran’s ballistic", " missile program");
-    question_2 = new Question(svg, question_width, question_height, question_x, question_y * 1.5 + question_height, "1", "$606.5 billion for the", "Departmentof Defense budget", "for the 2019 year");
+    question_1 = new Question(svg, question_width, question_height, question_x, question_y / 2, "0", "Impose sanctions against any", "person helping Iran’s ballistic", " missile program");
+    question_2 = new Question(svg, question_width, question_height, question_x, question_y * 1.5 + question_height, "1", "Vote $606.5 billion for the", "Department of Defense budget", "for the 2019 year");
     question_3 = new Question(svg, question_width, question_height, question_x, question_y * 2.5 + question_height * 2, "2", "Disapprove a rule that attempted ", "to reduce the environmental", " impact of coal mining");
 
     questions_list = [];
