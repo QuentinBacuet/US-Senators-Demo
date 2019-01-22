@@ -134,7 +134,7 @@ function init() {
         .style("opacity", 0.5);
 
     var dys = ["-0.65em", ".35em", "1.35em"];
-    var texts = ["Would you have voted for", "limiting the tax cuts for", "the wealthier population?"];
+    var texts = ["Would you have voted against" ,"providing tax cuts for", "the wealthier population ?"];
 
     for (var i = 0; i < dys.length; i++) {
         svg
